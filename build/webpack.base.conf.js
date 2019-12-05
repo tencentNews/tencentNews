@@ -1,3 +1,10 @@
+/*
+ * @Description: 
+ * @Author: losn
+ * @Date: 2019-11-25 17:30:23
+ * @LastEditors: losn
+ * @LastEditTime: 2019-11-26 11:03:47
+ */
 'use strict'
 const path = require('path')
 const utils = require('./utils')
@@ -64,6 +71,10 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
+      },
+      {
+        test:/\.scss$/,
+        loaders:["style","css","sass"]
       }
     ]
   },
